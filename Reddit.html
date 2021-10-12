@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit's post Portal</title>
+    <style>
+        .content {
+  max-width:500px;
+  margin: auto;
+  background: #5636ca;
+  padding: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+    </style>
+</head>
+<body  style="background-color:#389ca3;">
+<div class="content">
+<form id = "form1" action="/redditUpdate" method="post">
+    <img src="https://camo.githubusercontent.com/73e1f4398981238e647059fc304829ac0065e21c44685062619db8c55ff2d074/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f66722f7468756d622f352f35382f5265646469745f6c6f676f5f6e65772e7376672f3132303070782d5265646469745f6c6f676f5f6e65772e7376672e706e67"
+         style="margin-left: 125px" class="img-responsive" style="display:center" width="200" height="100">
+    <br>
+    <textarea name="title" placeholder = "Title" rows="3" cols="40"  form="form1"
+    style="margin-left: 80px"></textarea>
+    <textarea name="status" placeholder = "Thoughts" rows="8" cols="40"  form="form1"
+    style="margin-left: 80px"></textarea>
+    <button type="submit" style="margin-left:150px; width:160px">Post</button>
+</form>
+</div>
+</body>
+</html>
